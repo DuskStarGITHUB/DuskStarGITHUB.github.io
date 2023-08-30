@@ -28,9 +28,18 @@ Aquí encontraras los archivos, tambien su deploy.
 
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://www.facebook.com/duskstarspr) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/lduskstarl) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/speencer-lk) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@iduskstari)[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@@duskstar2759)
 
-## 📸 Capturas de Pantalla
+Mi sitio web está construido utilizando las siguientes tecnologías:
 
-Mi intencion fue crear una pagina deslizable con JS algo muy complicado pues no soy front end pero gracias a mi basico conocimiento de JS lo he logrado, logre un diseño simple pero con una vista profesional:
+- Lenguajes de programación: HTML, CSS, JavaScript, Python
+- Frameworks: N/A
+- Herramientas: Vs Code, OperaGx (Consola y Inspeccion de elemenetos)
+- Librerias: Jquery, Bootsrap, Slick JS
 
-![Inicio](URL_CAPTURA_PANTALLA_1)
-![Acerca de mi](URL_CAPTURA_PANTALLA_2)
+## 🚀 Cómo Clonar e Implementar
+
+Si deseas explorar mi sitio web en tu entorno local, sigue estos pasos:
+
+1. Clona este repositorio: `https://github.com/DuskStarGITHUB/DuskStarGITHUB.github.io`
+2. Navega a la carpeta del proyecto: `cd assets` (si lo requieres)
+3. Inicia un servidor local y ejecuta index.html.
+
