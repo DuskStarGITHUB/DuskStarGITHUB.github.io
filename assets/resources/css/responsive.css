@@ -1,0 +1,127 @@
+@media screen and (max-width: 768px) {
+  .button-cv {
+    font-size: 0.1vw; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    padding: 0.1% 10%; /* Ajusta el padding para dispositivos móviles */
+    transform: translate(200%, 0%); /* Ajusta la posición */
+  }
+
+  .span-cv {
+    font-size: 1;
+    height: 5vh;
+    width: 5vw;
+    align-items: center;
+    text-align: center;
+    padding-top: 1vh;
+  }
+  .deco-bar-1 {
+    position: absolute;
+    bottom: 2%;
+    left: -13%;
+    transform: none; /* Eliminamos la transformación previa */
+    background: #ffd000;
+    padding: 2px 0px 0px 80px;
+    border-radius: 10px;
+  }
+  .cards-social {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px; /* Agregando espacio inferior */
+  }
+  .bar-container {
+    position: absolute;
+    bottom: 10px; /* Cambiado a 'bottom' para ubicarlo en la esquina inferior */
+    right: 100px; /* Cambiado a 'right' para ubicarlo en la esquina derecha */
+    width: 70px;
+    height: 2px;
+    background-color: transparent;
+    overflow: hidden;
+    transform: translate(100%, 4%); /* Eliminado el 'transform' anterior */
+  }
+
+  .bar {
+    width: 10px;
+    height: 250%;
+    background-color: #ffd000;
+    animation: growAndShrinkBar 4s linear infinite;
+  }
+
+  @keyframes growAndShrinkBar {
+    0%,
+    100% {
+      width: 0px;
+    }
+    50% {
+      width: 100px;
+    }
+  }
+  .h5-s {
+    font-size: 20px;
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    position: absolute;
+    font-weight: 900;
+    transform: translate(15%, -350%);
+  }
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 0;
+    animation: typing 6s steps(30) infinite,
+      blink 0.5s step-end infinite alternate;
+  }
+  @keyframes typing {
+    0%,
+    100% {
+      width: 0;
+    }
+    50% {
+      width: 20ch;
+    }
+  }
+  .p-s {
+    position: absolute;
+    padding: 0;
+    width: 200px;
+    text-align: justify;
+    font-size: 13px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-17vw, -7vh);
+    text-align: justify;
+    height: 20px;
+    font-weight: 100;
+  }
+  .contact-header-caption {
+    padding-top: 40px;
+  }
+  .input-name {
+    font-size: 5px;
+    width: 80px;
+  }
+  .input-subject {
+    font-size: 5px;
+  }
+  .input-textarea {
+    font-size: 5px;
+  }
+  .tecno {
+    font-size: 10px;
+  }
+  .resources-s {
+    font-size: 10px;
+  }
+  .resources-s2 {
+    font-size: 10px;
+    bottom: -96.3%; /* Ajusta el porcentaje según la distancia desde la parte superior */
+    right: 2%; /* Ajusta el porcentaje según la distancia desde la izquierda */
+  }
+  .signal-text{
+    font-size: 10px;
+  }
+}

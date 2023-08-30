@@ -1,0 +1,180 @@
+/* SEÑALES */
+.signal-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: pulse 1s ease-in-out infinite;
+  text-align: center; /* Alineación centrada */
+}
+
+/* Estilos para la flecha superior */
+.signal-top {
+  position: absolute; /* Para posicionar en la esquina superior */
+  top: 0; /* Se pega al borde superior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición horizontal */
+}
+
+/* Estilos para la flecha inferior */
+.signal-bottom {
+  position: absolute; /* Para posicionar en la esquina inferior */
+  bottom: 0; /* Se pega al borde inferior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición horizontal */
+}
+
+/* ANIMACION DE SEÑAL */
+
+@keyframes pulse {
+  0% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+}
+
+/* ANIMACION DE DIRECCIONALES */
+@keyframes pulse-arrow-down {
+  0% {
+    opacity: 0.1;
+    transform: translate(0%, 4700%) scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translate(0%, 4700%) scale(1.05);
+  }
+  100% {
+    opacity: 0.1;
+    transform: translate(0%, 4700%) scale(1);
+  }
+}
+
+@keyframes pulse-arrow-up {
+  0% {
+    opacity: 0.1;
+    transform: translate(0%, -5020%) scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translate(0%, -5020%) scale(1.05);
+  }
+  100% {
+    opacity: 0.1;
+    transform: translate(0%, -5020%) scale(1);
+  }
+}
+
+/* COLOREO DE LETRAS */
+
+.h2-a .deco {
+  color: #ffd000;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5vw; /* Utilizando unidades relativas para el tamaño de fuente */
+}
+
+.h3-a .deco {
+  color: #ffd000;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5vw; /* Utilizando unidades relativas para el tamaño de fuente */
+}
+
+.deco-s {
+  color: #ffd000;
+  font-family: "Istok Web", sans-serif;
+  font-size: 40px;
+}
+.deco-1 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 40px;
+  color: #ffd000;
+}
+
+/* BARRA ANIMADA */
+.deco-bar-1 {
+  position: absolute;
+  bottom: 4%;
+  left: -4%;
+  transform: none; /* Eliminamos la transformación previa */
+  background: #ffd000;
+  padding: 2px 0px 0px 80px;
+  border-radius: 10px;
+}
+
+
+.bar-container {
+  position: absolute;
+  bottom: 20px; /* Cambiado a 'bottom' para ubicarlo en la esquina inferior */
+  right: 0; /* Cambiado a 'right' para ubicarlo en la esquina derecha */
+  width: 250px;
+  height: 2px;
+  background-color: transparent;
+  overflow: hidden;
+  transform: translate(-10%, 0%); /* Eliminado el 'transform' anterior */
+}
+
+.bar {
+  width: 10px;
+  height: 250%;
+  background-color: #ffd000;
+  animation: growAndShrinkBar 4s linear infinite;
+}
+
+@keyframes growAndShrinkBar {
+  0%,
+  100% {
+    width: 0px;
+  }
+  50% {
+    width: 190px;
+  }
+}
+
+/* ACERCA DE MI DECORACION*/
+
+.bar-sup {
+  position: absolute;
+  padding: 0;
+  background: #ffd000;
+  padding: 2px 100% 0px 0px;
+  top: 0%;
+  left: 0%;
+}
+
+.bar-inf {
+  position: absolute;
+  padding: 0;
+  background: #ffd000;
+  padding: 2px 100% 0px 0px;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 99vh);
+}
+
+.deco-s {
+  color: #ffd000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+.deco-s2 {
+  color: #fff200;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+}
+
+.bar-inf2 {
+  position: absolute;
+  padding: 0;
+  background: #ffd000;
+  padding: 2px 100% 0px 0px;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 198.6vh);
+}

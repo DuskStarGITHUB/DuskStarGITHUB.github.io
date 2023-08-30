@@ -1,0 +1,289 @@
+/* IMPORTACIONES DE FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap");
+body {
+  overflow-x: hidden !important;
+}
+/* CSS */
+section .content .h1-a {
+  position: relative;
+  top: 0; /* Cambiado a 0 para que esté en la parte superior */
+  left: 0;
+  transform: translate(34%, -20%); /* Cambiado el valor Y a 0 */
+  font-family: "Roboto", sans-serif;
+  font-size: 4.5vw;
+  letter-spacing: -0.03em;
+  margin: 0; /* Eliminar margen para evitar espacio extra */
+}
+
+.h2-a {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5vw; /* Utilizando unidades relativas para el tamaño de fuente */
+  text-align: center; /* Alineación central del texto */
+  margin: 0; /* Eliminar margen para evitar espacio extra */
+  transform: translate(69%, -60%); /* Ajuste de la posición relativa */
+}
+
+.HE1 {
+  position: fixed; /* Cambiado a fixed para mantenerlo en la esquina */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8.7vh; /* Utilizando unidades relativas para la altura */
+  background: none;
+  display: flex; /* Utilizando flexbox para alinear los elementos verticalmente */
+  align-items: center; /* Alineación vertical en el centro */
+  padding: 10px; /* Agregado un espacio de relleno para evitar que el contenido esté demasiado pegado a los bordes */
+}
+
+/* SWITCH */
+.switch-container {
+  position: absolute;
+  left: auto;
+  top: 25%;
+  bottom: auto;
+  right: 10px;
+}
+
+.switch {
+  --border-radius: 999px;
+  --slider-t-width: 2.875em;
+  --slider-t-height: 1.5em;
+  --slider-t-default-bg: rgb(255, 255, 255);
+  --slider-t-hover-bg: rgba(255, 255, 255, 0.12);
+  --slider-t-checked-bg: rgb(68, 66, 66);
+  --slider-t-transition: 0.2s background-color;
+  --slider-t-inset-width: calc(
+    (var(--slider-t-height) - var(--circle-diameter)) / 2
+  );
+  --circle-diameter: 1em;
+  --circle-bg: rgb(0, 0, 0);
+  --circle-transition: left ease 0.2s, -webkit-transform ease 0.2s;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider-t {
+  width: var(--slider-t-width);
+  height: var(--slider-t-height);
+  background: var(--slider-t-default-bg);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  transition: var(--slider-t-transition);
+  position: relative;
+}
+
+.slider-t::before {
+  position: absolute;
+  left: var(--slider-t-inset-width);
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  width: var(--circle-diameter);
+  height: var(--circle-diameter);
+  background: var(--circle-bg);
+  border-radius: var(--border-radius);
+  transition: var(--circle-transition);
+  box-shadow: 0 0 1px rgba(51, 41, 41, 0.05), 0 1px 3px rgba(51, 41, 41, 0.1);
+}
+
+.slider-t:hover {
+  transition: 6s;
+  background-color: #ffd000;
+  cursor: pointer;
+}
+
+.switch input:checked + .slider-t {
+  --slider-t-default-bg: rgb(0, 0, 0);
+}
+
+.switch input:checked + .slider-t::before {
+  left: calc(100% - var(--circle-diameter) - var(--slider-t-inset-width));
+  background: rgb(255, 255, 255);
+}
+
+/* MAS CSS */
+
+.h3-a {
+  position: absolute;
+  bottom: 10px; /* Cambiado a bottom para estar en la esquina inferior */
+  left: 10px; /* Cambiado a left para estar en la esquina izquierda */
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5vw; /* Utilizando unidades relativas para el tamaño de fuente */
+  letter-spacing: -0.03em; /* Ajuste del espaciado entre letras */
+  margin: 0; /* Eliminar margen para evitar espacio extra */
+  padding-left: 20px; /* Agregado espacio entre el borde y el texto */
+}
+
+/* ANIMACIONES DE PEFILES */
+
+.cards-social {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px; /* Agregando espacio inferior */
+}
+
+.card {
+  display: flex;
+  height: 4vh; /* Utilizando unidades relativas para la altura */
+  width: 20vw; /* Utilizando unidades relativas para el ancho */
+  margin-right: 1vw; /* Utilizando unidades relativas para el margen derecho */
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  opacity: 1;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background: linear-gradient(
+    45deg,
+    #00000000 0%,
+    #42424200 0%,
+    #4444446e 50%,
+    #353534 75%,
+    #575755 100%
+  );
+  border: #ffd000 solid 2px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background: #000000;
+  background: linear-gradient(
+    45deg,
+    #00000000 0%,
+    #42424200 0%,
+    #2321bb7a 50%,
+    #2421bb 75%,
+    #2421bb 100%
+  );
+  border: #ffd000 solid 2px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background: linear-gradient(
+    45deg,
+    #00000000 0%,
+    #42424200 25%,
+    #af0e0e7c 50%,
+    #af0e0e 75%,
+    #af0e0e 100%
+  );
+  border: #ffd000 solid 2px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+  background: linear-gradient(
+    45deg,
+    #00000000 0%,
+    #42424200 25%,
+    #0099ff6b 50%,
+    #0099ff 75%,
+    #0099ff 100%
+  );
+  border: #ffd000 solid 2px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* MAS TEXTO CSS */
+.strong1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-362%, 1800%);
+  font-size: small;
+  font-weight: 800;
+  opacity: 0.2;
+}
+
+/* BOTONES */
+.button-cv {
+  position: relative;
+  color: #e8e8e8;
+  background: none;
+  border: 2px solid #202020;
+  font-weight: 500;
+  font-size: 0.1vw;
+  text-transform: uppercase;
+  padding: 1% 4%; /* Ajusta el padding para controlar el tamaño del botón */
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(430%, -40%);
+}
+
+.span-cv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+}
+
+.button-cv:hover{
+  border-color: #ffd000c4;
+}
