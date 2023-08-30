@@ -40,6 +40,5 @@ Mi sitio web está construido utilizando las siguientes tecnologías:
 Si deseas explorar mi sitio web en tu entorno local, sigue estos pasos:
 
 1. Clona este repositorio: `https://github.com/DuskStarGITHUB/DuskStarGITHUB.github.io`
-2. Navega a la carpeta del proyecto: `cd assets` (si lo requieres)
-3. Inicia un servidor local y ejecuta index.html.
+1. Ejecuta un html en un servidor local.
 
