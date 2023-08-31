@@ -99,16 +99,17 @@
   }
   .contact-header-caption {
     padding-top: 40px;
+    transform: translate(0,40%);
   }
   .input-name {
-    font-size: 5px;
-    width: 80px;
+    font-size: 15px;
+    width: 100px;
   }
   .input-subject {
-    font-size: 5px;
+    font-size: 15px;
   }
   .input-textarea {
-    font-size: 5px;
+    font-size: 15px;
   }
   .tecno {
     font-size: 10px;
@@ -121,7 +122,20 @@
     bottom: -96.3%; /* Ajusta el porcentaje según la distancia desde la parte superior */
     right: 2%; /* Ajusta el porcentaje según la distancia desde la izquierda */
   }
-  .signal-text{
+  .signal-text {
     font-size: 10px;
+  }
+  .h4-s {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40vh);
+    font-family: "Istok Web", sans-serif;
+    font-size: 40px;
+  }
+  .deco-s3 {
+    color: rgb(188, 188, 188);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 100;
   }
 }
