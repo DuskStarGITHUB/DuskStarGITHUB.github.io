@@ -236,19 +236,14 @@
                 <div class="form-header">
                   Formulario
                 </div>
-                <form id="myForm" action="#">
+                <form id="myForm" action="https://formsubmit.co/contactspeencer@gmail.com" method="POST">
                   <div class="input-line">
-                    <input id="name" type="text" placeholder="Nombre" class="input-name">
-                    <input id="email" type="email" placeholder="Correo" class="input-name">
+                    <input id="name" type="text" placeholder="Nombre" class="input-name" name="name">
+                    <input id="email" type="email" placeholder="Correo" class="input-name" name="email">
                   </div>
-                  <input type="text" id="subject" placeholder="Tema" class="input-subject">
-                  <textarea id="body" class="input-textarea" placeholder="Mensaje"></textarea>
-                  <style>
-                    #body {
-                      resize: none;
-                    }
-                  </style>
-                  <button type="button" id="submit" value="send">Subir</button>
+                  <input type="text" id="subject" placeholder="Tema" class="input-subject" name="subject">
+                  <textarea id="body" class="input-textarea" placeholder="Mensaje" name="comments"></textarea>
+                  <input type="submit" id="submit" value="Subir">
                 </form>
               </div>
             </div>
@@ -261,6 +256,7 @@
   <script src="assets/resources/js/script.js"></script>
   <script src="assets/resources/js/insert.js"></script>
   <script src="assets/resources/ts/index.js"></script>
+  <script src="assets/resources/js/validacion.js"></script>
 </body>
 <!--
 ─▄▀─▄▀
