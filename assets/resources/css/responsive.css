@@ -99,7 +99,7 @@
   }
   .contact-header-caption {
     padding-top: 40px;
-    transform: translate(0,40%);
+    transform: translate(0,56%);
   }
   .input-name {
     font-size: 15px;
@@ -137,5 +137,14 @@
     color: rgb(188, 188, 188);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 100;
+  }
+  .more-info{
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: translate(-39vw,46vh);
+    background: none;
+    cursor: pointer;
   }
 }

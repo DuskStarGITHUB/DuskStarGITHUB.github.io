@@ -217,9 +217,9 @@ section .content .h1-a {
     45deg,
     #00000000 0%,
     #42424200 25%,
-    #0099ff6b 50%,
-    #0099ff 75%,
-    #0099ff 100%
+    #ff8c006b 50%,
+    #ffa200 75%,
+    #ffa600 100%
   );
   border: #ffd000 solid 2px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
@@ -274,14 +274,15 @@ section .content .h1-a {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  transform: translate(430%, -40%);
+  transform: translate(430%, 45%);
 }
 
 .span-cv {
   display: inline-block;
   vertical-align: middle;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
 }
 
 .button-cv:hover{
