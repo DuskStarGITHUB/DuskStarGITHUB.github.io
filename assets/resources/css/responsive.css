@@ -63,7 +63,7 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     position: absolute;
     font-weight: 900;
-    transform: translate(15%, -350%);
+    transform: translate(-5%, -700%);
   }
   .typewriter {
     overflow: hidden;
@@ -85,31 +85,48 @@
   .p-s {
     position: absolute;
     padding: 0;
-    width: 200px;
+    width: 230px;
     text-align: justify;
-    font-size: 13px;
+    font-size: 16px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background: none;
     top: 50%;
     left: 50%;
-    transform: translate(-17vw, -7vh);
+    transform: translate(-28vw, -10vh);
     text-align: justify;
     height: 20px;
     font-weight: 100;
   }
+  .blogbtn {
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(0vw, 25vh);
+  }
   .contact-header-caption {
     padding-top: 40px;
-    transform: translate(0,56%);
+    transform: translate(0, 56%);
   }
   .input-name {
     font-size: 15px;
-    width: 100px;
+    width: 200px;
+    left: 13px;
+    position: relative;
+    background-color: #131313;
   }
   .input-subject {
     font-size: 15px;
+    background-color: #131313;
+    width: 300px;
+    left: -50px;
+    position: relative;
   }
   .input-textarea {
     font-size: 15px;
+    background-color: #131313;
+    width: 350px;
+    position: relative;
+    left: -87px;
   }
   .tecno {
     font-size: 10px;
@@ -129,7 +146,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -40vh);
+    transform: translate(-50%, -40vh);
     font-family: "Istok Web", sans-serif;
     font-size: 40px;
   }
@@ -138,13 +155,16 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 100;
   }
-  .more-info{
+  .more-info {
     display: block;
     position: relative;
     bottom: 0;
     left: 0;
-    transform: translate(-39vw,46vh);
+    transform: translate(-39vw, 44vh);
     background: none;
     cursor: pointer;
+  }
+  .container-svg {
+    left: -5%;
   }
 }

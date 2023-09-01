@@ -7,7 +7,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-40%, -49vh);
+  transform: translate(-50%, -49vh);
   font-family: "Istok Web", sans-serif;
   font-size: 40px;
 }
@@ -246,7 +246,7 @@
   height: auto;
   width: auto;
   top: 95vh;
-  left: 0px;
+  left: 0%;
 }
 
 .center-point {
