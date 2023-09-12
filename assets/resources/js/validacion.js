@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
   emailInput.addEventListener("input", function () {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!emailPattern.test(emailInput.value)) {
-      emailInput.setCustomValidity("Por favor, ingresa una dirección de correo válida.");
+      emailInput.setCustomValidity(
+        "Por favor, ingresa una dirección de correo válida."
+      );
     } else {
       emailInput.setCustomValidity("");
     }

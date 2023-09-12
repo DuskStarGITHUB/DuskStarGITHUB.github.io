@@ -214,7 +214,6 @@
   transform: translate(0, 0); /* Eliminando el transform */
 }
 
-
 .resources-s2:focus,
 .resources-s2:hover {
   color: #fff;
@@ -413,6 +412,6 @@
   font-weight: 100;
 }
 
-.more-info{
+.more-info {
   display: none;
 }
