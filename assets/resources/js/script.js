@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var switchInput = document.querySelector(".switch input");
   var pages = document.querySelectorAll(".page");
   var textElements = document.querySelectorAll(
-    ".page h1, .page h2, .page h3, .page h4, .page h5, .page h6, .page p, .page, strong, .span-cv, .signal-text,#blogButton,#utilities,#languages,#more, .deco-s3, .options, .tecno,.resources-s,.resources-s2"
+    ".page h1, .page h2, .page h3, .page h4, .page h5, .page h6, .page p, .page, strong, .span-cv, .signal-text,#blogButton,#utilities,#languages,#more, .deco-s3, .options, .tecno,.resources-s,.resources-s2, .color"
   );
   var svgElements = document.querySelectorAll("svg");
   var buttonCv = document.querySelector(".button-cv");
