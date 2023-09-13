@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Agregar evento de escucha para validar el formulario al enviar
   form.addEventListener("submit", function (event) {
     if (!form.checkValidity()) {
-      event.preventDefault(); // Detener el envío del formulario si hay campos no válidos
+      event.preventDefault();
     }
   });
 });

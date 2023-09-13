@@ -2,7 +2,7 @@
   .button-cv {
     font-size: 0.1vw; /* Ajusta el tamaño de fuente para dispositivos móviles */
     padding: 0.1% 10%; /* Ajusta el padding para dispositivos móviles */
-    transform: translate(200%, 0%); /* Ajusta la posición */
+    transform: translate(210%, 0%); /* Ajusta la posición */
   }
 
   .span-cv {
@@ -117,8 +117,8 @@
   .input-subject {
     font-size: 15px;
     background-color: #131313;
-    width: 300px;
-    left: -50px;
+    width: 430px;
+    left: -124px;
     position: relative;
   }
   .input-textarea {
@@ -126,7 +126,7 @@
     background-color: #131313;
     width: 350px;
     position: relative;
-    left: -87px;
+    left: -75px;
   }
   .tecno {
     font-size: 10px;
