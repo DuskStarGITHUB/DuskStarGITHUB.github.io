@@ -118,7 +118,7 @@
     font-size: 15px;
     background-color: #131313;
     width: 430px;
-    left: -124px;
+    left: -115px;
     position: relative;
   }
   .input-textarea {
@@ -155,16 +155,7 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: 100;
   }
-  .more-info {
-    display: block;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    transform: translate(-39vw, 44vh);
-    background: none;
-    cursor: pointer;
-  }
   .container-svg {
-    left: -5%;
+    left: 0%;
   }
 }

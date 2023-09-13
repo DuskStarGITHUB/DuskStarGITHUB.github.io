@@ -14,7 +14,3 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("blogButton").addEventListener("click", function () {
   window.open("#", "_blank");
 });
-// MORE INFOR BTN
-document.getElementById("more-info-s").addEventListener("click", function () {
-  window.open("assets/pages/mas-info/index.html", "_blank");
-});
