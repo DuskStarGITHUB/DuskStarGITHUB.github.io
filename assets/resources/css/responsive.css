@@ -63,24 +63,7 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     position: absolute;
     font-weight: 900;
-    transform: translate(-5%, -700%);
-  }
-  .typewriter {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 0;
-    animation: typing 6s steps(30) infinite,
-      blink 0.5s step-end infinite alternate;
-  }
-  @keyframes typing {
-    0%,
-    100% {
-      width: 0;
-    }
-    50% {
-      width: 20ch;
-    }
+    transform: translate(2%, -600%);
   }
   .p-s {
     position: absolute;
