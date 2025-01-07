@@ -10,9 +10,9 @@ Aquí encontrarás los archivos, así como el código de despliegue y control de
 
 ## 🖥️ **Tecnologías** 🚀
 
-- **Lenguajes de Programación**: HTML, CSS, JavaScript, Python
+- **Lenguajes de Programación**: HTML, CSS, JavaScript, entre otros....
 - **Frameworks**: N/A
-- **Herramientas**: Vs Code, OperaGX (Consola e Inspección de Elementos)
+- **Herramientas**: Vs Code, Terminal, GIT 
 - **Bibliotecas**: jQuery, Bootstrap, Slick JS
 
 ## ⚡ **Cómo Clonar y Desplegar** 🌱
@@ -33,7 +33,7 @@ Si deseas explorar mi sitio web en tu entorno local, sigue estos pasos:
 - Para asegurar una experiencia óptima en diferentes dispositivos, se utilizan imágenes responsivas que se adaptan automáticamente al tamaño de la pantalla.
 - Se proporcionan diferentes versiones de las imágenes para dispositivos móviles y de escritorio, garantizando que el contenido se muestre correctamente en cualquier resolución de pantalla.
 
-### **Formulario de Contacto con API** ✉️
+### **Formulario de Contacto con API externa sencilla** ✉️
 - El formulario de contacto incorpora funcionalidad de envío de datos a través de una API, permitiendo a los usuarios enviar consultas y mensajes de manera efectiva.
 - Esta implementación se realiza para superar las limitaciones de GitHub Pages en el alojamiento de un servidor backend, asegurando que los formularios sean completamente funcionales sin necesidad de un backend adicional.
 - Los datos del formulario se procesan y gestionan de manera eficiente a través de la API, asegurando una comunicación efectiva con los visitantes del sitio.
