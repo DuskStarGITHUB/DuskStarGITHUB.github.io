@@ -1,44 +1,42 @@
-/* IMPORTACIONES DE FUENTES */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap");
 body {
   overflow-x: hidden !important;
 }
-/* CSS */
+
 section .content .h1-a {
   position: relative;
-  top: 0; /* Cambiado a 0 para que esté en la parte superior */
+  top: 0;
   left: 0;
-  transform: translate(34%, -20%); /* Cambiado el valor Y a 0 */
+  transform: translate(34%, -20%);
   font-family: "Roboto", sans-serif;
   font-size: 4.5vw;
   letter-spacing: -0.03em;
-  margin: 0; /* Eliminar margen para evitar espacio extra */
+  margin: 0;
 }
 
 .h2-a {
   position: relative;
   font-family: "Oswald", sans-serif;
-  font-size: 2.5vw; /* Utilizando unidades relativas para el tamaño de fuente */
-  text-align: center; /* Alineación central del texto */
-  margin: 0; /* Eliminar margen para evitar espacio extra */
-  transform: translate(69%, -60%); /* Ajuste de la posición relativa */
+  font-size: 2.5vw;
+  text-align: center;
+  margin: 0;
+  transform: translate(69%, -60%);
 }
 
 .HE1 {
-  position: fixed; /* Cambiado a fixed para mantenerlo en la esquina */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 8.7vh; /* Utilizando unidades relativas para la altura */
+  height: 8.7vh;
   background: none;
-  display: flex; /* Utilizando flexbox para alinear los elementos verticalmente */
-  align-items: center; /* Alineación vertical en el centro */
-  padding: 10px; /* Agregado un espacio de relleno para evitar que el contenido esté demasiado pegado a los bordes */
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-/* SWITCH */
 .switch-container {
   position: absolute;
   left: auto;
@@ -107,20 +105,16 @@ section .content .h1-a {
   background: rgb(255, 255, 255);
 }
 
-/* MAS CSS */
-
 .h3-a {
   position: absolute;
-  bottom: 10px; /* Cambiado a bottom para estar en la esquina inferior */
-  left: 10px; /* Cambiado a left para estar en la esquina izquierda */
+  bottom: 10px;
+  left: 10px;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.5vw; /* Utilizando unidades relativas para el tamaño de fuente */
-  letter-spacing: -0.03em; /* Ajuste del espaciado entre letras */
-  margin: 0; /* Eliminar margen para evitar espacio extra */
-  padding-left: 20px; /* Agregado espacio entre el borde y el texto */
+  font-size: 1.5vw;
+  letter-spacing: -0.03em;
+  margin: 0;
+  padding-left: 20px;
 }
-
-/* ANIMACIONES DE PEFILES */
 
 .cards-social {
   position: absolute;
@@ -128,14 +122,14 @@ section .content .h1-a {
   right: 10px;
   display: flex;
   flex-direction: row;
-  padding-bottom: 5px; /* Agregando espacio inferior */
+  padding-bottom: 5px;
 }
 
 .card {
   display: flex;
-  height: 4vh; /* Utilizando unidades relativas para la altura */
-  width: 20vw; /* Utilizando unidades relativas para el ancho */
-  margin-right: 1vw; /* Utilizando unidades relativas para el margen derecho */
+  height: 4vh;
+  width: 20vw;
+  margin-right: 1vw;
 }
 
 .card svg {
@@ -230,21 +224,17 @@ section .content .h1-a {
   40% {
     transform: scale(1.4);
   }
-
   60% {
     transform: scale(0.8);
   }
-
   80% {
     transform: scale(1.2);
   }
-
   100% {
     transform: scale(1);
   }
 }
 
-/* MAS TEXTO CSS */
 .strong1 {
   position: absolute;
   top: 50%;
@@ -255,7 +245,6 @@ section .content .h1-a {
   opacity: 0.2;
 }
 
-/* BOTONES */
 .button-cv {
   position: relative;
   color: #e8e8e8;
@@ -264,7 +253,7 @@ section .content .h1-a {
   font-weight: 500;
   font-size: 0.1vw;
   text-transform: uppercase;
-  padding: 1% 4%; /* Ajusta el padding para controlar el tamaño del botón */
+  padding: 1% 4%;
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;

@@ -1,10 +1,19 @@
 @media screen and (max-width: 768px) {
-  .button-cv {
-    font-size: 0.1vw; /* Ajusta el tamaño de fuente para dispositivos móviles */
-    padding: 0.1% 10%; /* Ajusta el padding para dispositivos móviles */
-    transform: translate(210%, 0%); /* Ajusta la posición */
+  .container1 {
+    position: fixed;
+    left: 25%;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
-
+  .button-cv {
+    font-size: 0.1vw;
+    padding: 0.1% 10%;
+    transform: translate(210%, 0%);
+  }
   .span-cv {
     font-size: 1;
     height: 5vh;
@@ -13,41 +22,32 @@
     text-align: center;
     padding-top: 1vh;
   }
-  .deco-bar-1 {
-    position: absolute;
-    bottom: 2%;
-    left: -13%;
-    transform: none; /* Eliminamos la transformación previa */
-    background: #ffd000;
-    padding: 2px 0px 0px 80px;
-    border-radius: 10px;
-  }
   .cards-social {
     position: absolute;
     bottom: 10px;
     right: 10px;
     display: flex;
     flex-direction: row;
-    padding-bottom: 5px; /* Agregando espacio inferior */
+    padding-bottom: 5px;
   }
   .bar-container {
     position: absolute;
-    bottom: 10px; /* Cambiado a 'bottom' para ubicarlo en la esquina inferior */
-    right: 8%; /* Cambiado a 'right' para ubicarlo en la esquina derecha */
+    bottom: 10px;
+    right: 8%;
     width: 70px;
     height: 2px;
     background-color: transparent;
     overflow: hidden;
-    transform: translate(0%, 4%); /* Eliminado el 'transform' anterior */
+    transform: translate(0%, 4%);
+    display: block;
   }
-
   .bar {
     width: 10px;
     height: 250%;
     background-color: #ffd000;
     animation: growAndShrinkBar 4s linear infinite;
+    display: block;
   }
-
   @keyframes growAndShrinkBar {
     0%,
     100% {
@@ -63,53 +63,29 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     position: absolute;
     font-weight: 900;
-    transform: translate(2%, -600%);
+    transform: translate(2%, -1000%);
   }
   .p-s {
     position: absolute;
-    padding: 0;
+    padding: 10px;
     width: 230px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 13px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25vw, -10vh);
-    text-align: justify;
-    height: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    top: 40%;
+    left: 25%;
+    transform: none;
     font-weight: 100;
+    z-index: 10;
+    color: white;
+    border-radius: 4px;
   }
   .blogbtn {
     position: absolute;
     top: 50;
     left: 50;
-    transform: translate(0vw, 25vh);
-  }
-  .contact-header-caption {
-    padding-top: 40px;
-    transform: translate(0, 56%);
-  }
-  .input-name {
-    font-size: 15px;
-    width: 200px;
-    left: 13px;
-    position: relative;
-    background-color: #131313;
-  }
-  .input-subject {
-    font-size: 15px;
-    background-color: #131313;
-    width: 430px;
-    left: -115px;
-    position: relative;
-  }
-  .input-textarea {
-    font-size: 15px;
-    background-color: #131313;
-    width: 350px;
-    position: relative;
-    left: -75px;
+    transform: translate(0vw, 32vh);
   }
   .tecno {
     font-size: 10px;
@@ -119,8 +95,8 @@
   }
   .resources-s2 {
     font-size: 10px;
-    bottom: -96.3%; /* Ajusta el porcentaje según la distancia desde la parte superior */
-    right: 2%; /* Ajusta el porcentaje según la distancia desde la izquierda */
+    bottom: -96.3%;
+    right: 2%;
   }
   .signal-text {
     font-size: 10px;
@@ -141,8 +117,19 @@
   .container-svg {
     left: 0%;
   }
+  .sobre-mi .page {
+    overflow: hidden !important;
+  }
+  .section-am2 {
+    display: none;
+  }
+  .IMG-2 {
+    display: none;
+  }
+  .h4-s {
+    top: 50% !important;
+  }
 }
-
 
 #posicion20 {
   margin: 10px !important;

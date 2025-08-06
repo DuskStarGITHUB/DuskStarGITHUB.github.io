@@ -96,33 +96,14 @@
   color: #ffd000;
 }
 
-/* BARRA ANIMADA */
-.deco-bar-1 {
-  position: absolute;
-  bottom: 4%;
-  left: -4%;
-  transform: none; /* Eliminamos la transformación previa */
-  background: #ffd000;
-  padding: 2px 0px 0px 80px;
-  border-radius: 10px;
-}
+
 
 .bar-container {
-  position: absolute;
-  bottom: 20px;
-  right: 0%;
-  width: 250px;
-  height: 2px;
-  background-color: transparent;
-  overflow: hidden;
-  transform: translate(-55%, 0%);
+  display: none;
 }
 
 .bar {
-  width: 10px;
-  height: 250%;
-  background-color: #ffd000;
-  animation: growAndShrinkBar 4s linear infinite;
+  display: none;
 }
 
 @keyframes growAndShrinkBar {
@@ -135,8 +116,6 @@
   }
 }
 
-/* ACERCA DE MI DECORACION*/
-
 .bar-sup {
   position: absolute;
   padding: 0;
@@ -144,6 +123,7 @@
   padding: 2px 100% 0px 0px;
   top: 0%;
   left: 0%;
+  z-index: 3;
 }
 
 .bar-inf {
@@ -154,6 +134,7 @@
   top: 0%;
   left: 0%;
   transform: translate(0%, 99vh);
+  z-index: 3;
 }
 
 .deco-s {

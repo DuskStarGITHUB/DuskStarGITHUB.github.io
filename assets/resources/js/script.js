@@ -1,6 +1,4 @@
-// WARNING
 gsap.config({ trialWarn: false });
-// ANIMACION DE SCROLL VERTICAL DE PAGINA
 gsap.registerPlugin(Observer);
 
 let sections = document.querySelectorAll("section"),
@@ -41,9 +39,7 @@ function gotoSection(index, direction) {
     },
     0
   ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
-
   currentIndex = index;
-
   let currentSection = sections[currentIndex];
   let sectionTitle = currentSection.getAttribute("data-title");
   document.title = sectionTitle;
@@ -60,13 +56,11 @@ Observer.create({
 
 function updateCurrentSection() {
   let scrollTop = window.scrollY || window.pageYOffset;
-
   let currentSection = Array.from(sections).find(
     (section) =>
       scrollTop >= section.offsetTop &&
       scrollTop < section.offsetTop + section.offsetHeight
   );
-
   if (currentSection) {
     let sectionIndex = Array.from(sections).indexOf(currentSection);
     currentIndex = sectionIndex;
@@ -74,10 +68,8 @@ function updateCurrentSection() {
 }
 
 window.addEventListener("scroll", updateCurrentSection);
-
 gotoSection(0, 1);
 
-// TEMA DE PAGINA
 document.addEventListener("DOMContentLoaded", function () {
   var switchInput = document.querySelector(".switch input");
   var pages = document.querySelectorAll(".page");
@@ -87,7 +79,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var svgElements = document.querySelectorAll("svg");
   var buttonCv = document.querySelector(".button-cv");
   var card2 = document.querySelector(".card-2");
-
+  var container1 = document.querySelector(".container1");
+  var img1 = document.querySelector(".IMG-1");
+  var pS = document.querySelector(".p-s");
+  var h4S2 = document.querySelector(".h4-s-2");
   switchInput.addEventListener("change", function () {
     if (this.checked) {
       pages.forEach(function (page) {
@@ -97,6 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
       textElements.forEach(function (element) {
         element.style.color = "#000000";
       });
+      container1.classList.add("no-before");
+      img1.style.background = "none";
+      pS.style.background = "none";
+      h4S2.style.setProperty('color', '#ffffff', 'important');
       changeSVGFill("#000000");
       buttonCv.style.borderColor = "#000000";
     } else {
@@ -108,6 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
       textElements.forEach(function (element) {
         element.style.color = "#ffffff";
       });
+      container1.classList.remove("no-before");
+      img1.style.background = "linear-gradient(to left, rgba(0, 0, 0, 0.9) -50%, transparent 100%)";
+      pS.style.background = "rgba(0, 0, 0, 1)";
+      h4S2.style.removeProperty('color');
+      
       changeSVGFill("#ffffff");
       buttonCv.style.borderColor = "#fff";
     }
@@ -120,23 +124,18 @@ document.addEventListener("DOMContentLoaded", function () {
       var circles = svg.querySelectorAll("circle");
       var ellipses = svg.querySelectorAll("ellipse");
       var rects = svg.querySelectorAll("rect");
-
       paths.forEach(function (path) {
         path.style.fill = color;
       });
-
       polygons.forEach(function (polygon) {
         polygon.style.fill = color;
       });
-
       circles.forEach(function (circle) {
         circle.style.fill = color;
       });
-
       ellipses.forEach(function (ellipse) {
         ellipse.style.fill = color;
       });
-
       rects.forEach(function (rect) {
         rect.style.fill = color;
       });

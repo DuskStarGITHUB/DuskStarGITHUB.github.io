@@ -1,0 +1,212 @@
+.proyectos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.proyecto-card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.proyecto-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto-card:hover img {
+  transform: scale(1.05);
+}
+
+.proyecto-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover .proyecto-overlay {
+  transform: translateY(0);
+}
+
+.proyecto-overlay h5 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.proyecto-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Placeholders */
+.placeholder {
+  background-color: #383838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ddd;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #777;
+}
+
+.placeholder-content svg {
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.placeholder-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Modal personalizado */
+.proyecto-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.proyecto-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 10px;
+  overflow-y: auto;
+  padding: 30px;
+  position: relative;
+  animation: modalFadeIn 0.4s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #cccccc;
+}
+
+.modal-gallery {
+  margin-bottom: 20px;
+}
+
+.gallery-main {
+  height: 350px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-main img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.gallery-thumbs img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.gallery-thumbs img:hover,
+.gallery-thumbs img.active {
+  opacity: 1;
+  border: 2px solid #4a6baf;
+}
+
+.modal-description {
+  color: rgb(68, 68, 68);
+}
+
+.modal-description h4 {
+  margin-top: 0;
+  color: #7c7a7a;
+}
+
+.modal-description p {
+  color: white;
+}
+
+.modal-description ul {
+  padding-left: 20px;
+  color: white;
+}
+
+.modal-description li {
+  margin-bottom: 8px;
+  color: white;
+}

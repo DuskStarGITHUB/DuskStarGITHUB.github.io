@@ -1,11 +1,7 @@
 <!-- DEFINICION DE HTML5 -->
 <!DOCTYPE html>
-
 <!-- IDIOMA DE PAGINA -->
 <html lang="es">
-
-<!-- AJUSTES DE PAGINA -->
-
 <!-- METADATOS -->
 <head>
   <!-- TITULO DE PAGINA -->
@@ -32,10 +28,10 @@
   <link rel="stylesheet" href="assets/resources/css/about-me.css">
   <link rel="stylesheet" href="assets/resources/css/contact.css">
   <link rel="stylesheet" href="assets/resources/css/responsive.css">
+  <link rel="stylesheet" href="assets/resources/css/projects.css">
   <script src="assets/resources/lib/lib.js"></script>
 </head>
 <!-- CUERPO DE PAGINA -->
-
 <body>
   <!-- SECCION INICIO -->
   <span class="COLOR_LOAD"><span class="decol">D</span>usk<span class="decol">S</span>tar</span>
@@ -118,8 +114,6 @@
                   </path>
                 </svg></span>
             </button>
-            <!-- CONTENIDO DECORATIVO -->
-            <div class="deco-bar-1"></div>
             <div class="bar-container">
               <div class="bar"></div>
             </div>
@@ -130,13 +124,11 @@
             <div class="signal signal-bottom">
               <span class="signal-text">Arrastra para navegar</span>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- SECCION SOBRE MI -->
   <section class="sobre-mi" data-title="|Sobre Mí|">
     <div class="outer">
@@ -147,27 +139,28 @@
           <div class="bar-inf"></div>
           <!-- CONTENIDO -->
           <h4 class="h4-s"><span class="deco-1">S</span>obre mí<span class="deco-1">.</span></h4>
+          <div class="container1">
+            <img src="./assets/archives/images/SPR_PNG.png" class="IMG-1" />
+          </div>
           <h5 class="h5-s typewriter">Speencer Pulido Romero</h5>
-          <p class="p-s">¡Hola! Tengo <span class="deco-s2">19 </span>años, He desarollado <span class="deco-s2">apps
-            </span>de <span class="deco-s2">Windows </span>y <span class="deco-s2">Android</span>, Me especializo
-            principalmente en el lenguaje de programacion llamado <span class="deco-s2">Python</span>, tengo
-            conocimientos en: <span class="deco-s3">Analisis de Datos</span>, <span class="deco-s3">VS Code</span>,
-            <span class="deco-s3">GIT</span>, <span class="deco-s3">MySQL</span>,
-            <span class="deco-s3">Diseño y Analisis de Algoritmos</span>, <span class="deco-s3">Empaquetacion</span>,
-            <span class="deco-s3">LINUX</span>.
+          <p class="p-s">👨‍💻 Full Stack Dev. Experto en <span class="deco-s2">JS    </span> y <span class="deco-s2">Python</span>, con <span class="deco-s2">+3 años</span> en IT. Lic. en Informática. Dominio en: <span class="deco-s3">Backend & APIs</span>, <span class="deco-s3">Docker   </span>,
+            <span class="deco-s3">SQL </span>, <span class="deco-s3">NoSQL</span>,
+            <span class="deco-s3">Cloud Infra</span>, <span class="deco-s3">SysAdmin</span>,
+            <span class="deco-s3">DevOps</span>.
           </p>
           <!-- BOTON -->
-          <button class="blogbtn" id="blogButton">BLOG</button>
+          <button class="blogbtn" id="blogButton">MAS</button>
           <!-- SVG ICONS -->
+          <h4 class="h4-s-2"><span class="deco-1">T</span>ecnologias <span class="deco-1">U</span>sadas<span class="deco-1">.</span></h4>
           <div class="container-svg">
             <span class="center-point"></span>
-            <a href="https://en.cppreference.com/w/" class="icon-link" target="_blank">
-              <img src="assets/archives/svg/cpp-svgrepo-com.svg" alt="C++" class="l1"
+            <a href="https://docs.docker.com/" class="icon-link" target="_blank">
+              <img src="assets/archives/svg/docker-svgrepo-com.svg" alt="C++" class="l1"
               style="width: 50px; height: 50px;">
             </a>
-            <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html" class="icon-link"
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="icon-link"
             target="_blank">
-            <img src="assets/archives/svg/icons8-typescript.svg" alt="JavaScript" class="l4"
+            <img src="assets/archives/svg/javascript-logo-svgrepo-com.svg" alt="JavaScript" class="l4"
             style="width: 50px; height: 50px;">
           </a>
           <a href="https://dev.mysql.com/doc/" class="icon-link" target="_blank">
@@ -187,6 +180,9 @@
                   style="width: 50px; height: 50px;">
               </a>
           </div>
+          <div class="section-am2">
+            <img src="./assets/archives/images/hands.png" class="IMG-2" />
+          </div>
           <!-- BARRA INFERIOR -->
           <div class="bar-inf2"></div>
         </div>
@@ -194,60 +190,116 @@
     </div>
     </div>
   </section>
-  <!-- SECCION PROYECTOS -->
-  <section class="proyectos" data-title="|Proyectos|">
-    <div class="outer">
-      <div class="inner">
-        <div class="page">
-          <h4 class="h4-s"><span class="deco-1">P</span>royectos<span class="deco-1">.</span></h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- SECCION CONTACTO -->
-  <section class="contacto" data-title="|CONTACTO|">
-    <div class="outer">
-      <div class="inner">
-        <div class="page">
-          <h4 class="h4-s"><span class="deco-1">C</span>ontacto<span class="deco-1">.</span></h4>
-          <div id="contact">
-            <div class="contact-header" id="posicion20">
-              <div class="contact-header-caption"> <span class="color">Contactame Por medio de este formulario
-                  rellenando los
-                  datos.</span></div>
+<!-- SECCION PROYECTOS -->
+<section class="proyectos" data-title="|Proyectos|">
+  <div class="outer">
+    <div class="inner">
+      <div class="page">
+        <h4 class="h4-s"><span class="deco-1">P</span>royectos<span class="deco-1">.</span></h4>
+        <div class="proyectos-container">
+          <!-- Proyecto 1 - Radio -->
+          <div class="proyecto-card" id="proyecto-radio">
+            <img src="assets/archives/images/proyects/radio/1.jpeg" alt="Radio Transmisor">
+            <div class="proyecto-overlay">
+              <h5>Radio Transmisor/Receptor</h5>
+              <p>Click para ver detalles</p>
             </div>
-            <div class="contact-content">
-              <!--FORMULARIO DE CONTACTO-->
-              <div class="contact-form">
-                <div class="form-header">
-                  Formulario
-                </div>
-                <form id="myForm" action="https://formsubmit.co/contactspeencer@gmail.com" method="POST">
-                  <div class="input-line">
-                    <input id="name" type="text" placeholder="Nombre" class="input-name" name="name">
-                    <input id="email" type="email" placeholder="Correo" class="input-name" name="email">
-                  </div>
-                  <input type="text" id="subject" placeholder="Tema" class="input-subject" name="subject">
-                  <textarea id="body" class="input-textarea" placeholder="Mensaje" name="comments"></textarea>
-                  <input type="submit" id="submit" value="Subir">
-                  <!-- API PARAMETROS -->
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_autoresponse" value="Formulado enviado correctamente,dentro de poco recibira una respuesta.">
-                  <input type="hidden" name="_subject" value="Nuevo Formulario recibido!">
-                  <input type="hidden" name="_replyto">
-                  <input type="hidden" name="_template" value="table">
-                  <input type="hidden" name="_next" value="https://duskstargithub.github.io/">
-                </form>
-              </div>
+          </div>
+          <!-- Proyecto 2 - Placeholder -->
+          <div class="proyecto-card placeholder">
+            <div class="placeholder-content">
+              <svg viewBox="0 0 24 24" width="48" height="48">
+                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+              </svg>
+              <p>Próximamente</p>
+            </div>
+          </div>
+          <!-- Proyecto 3 - Placeholder -->
+          <div class="proyecto-card placeholder">
+            <div class="placeholder-content">
+              <svg viewBox="0 0 24 24" width="48" height="48">
+                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+              </svg>
+              <p>Próximamente</p>
             </div>
           </div>
         </div>
       </div>
-  </section>
+    </div>
+  </div>
+  <!-- Modal para el proyecto de radio -->
+  <div class="proyecto-modal" id="radio-modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h3>Radio Transmisor/Receptor</h3>
+      <div class="modal-gallery">
+        <div class="gallery-main">
+          <img id="main-image" src="assets/archives/images/proyects/radio/1.jpeg" alt="Radio 1">
+        </div>
+        <div class="gallery-thumbs">
+          <img src="assets/archives/images/proyects/radio/1.jpeg" alt="Miniatura 1" class="thumb active">
+          <img src="assets/archives/images/proyects/radio/2.jpeg" alt="Miniatura 2" class="thumb">
+          <img src="assets/archives/images/proyects/radio/3.jpeg" alt="Miniatura 3" class="thumb">
+          <img src="assets/archives/images/proyects/radio/4.jpeg" alt="Miniatura 4" class="thumb">
+          <img src="assets/archives/images/proyects/radio/5.jpeg" alt="Miniatura 5" class="thumb">
+        </div>
+      </div>
+      <div class="modal-description">
+        <h4>Descripción del Proyecto</h4>
+        <p>Sistema de radio transmisor y receptor capaz de transmitir audio y música con calidad notable. Desarrollo completo desde el diseño del circuito hasta la implementación final.</p>
+        <ul>
+          <li>Transmisión y recepción en tiempo real</li>
+          <li>Rango ajustable (hasta 100m en espacio abierto)</li>
+          <li>Calidad de audio mejorada</li>
+          <li>Diseño compacto y portable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="contacto" data-title="|CONTACTO|">
+  <div class="outer">
+    <div class="inner">
+      <div class="page">
+        <h4 class="h4-s"><span class="deco-1">C</span>ontacto<span class="deco-1">.</span></h4>
+        <div id="contact">
+          <div class="contact-header">
+            <div class="contact-header-caption">
+              <span class="color">Contactame por medio de este formulario rellenando los datos.</span>
+            </div>
+          </div>
+          <div class="contact-content">
+            <!-- FORMULARIO -->
+            <div class="contact-form">
+              <div class="form-header">Formulario</div>
+              <form id="myForm" action="https://formsubmit.co/contactspeencer@gmail.com" method="POST">
+                <div class="input-line">
+                  <input id="name" type="text" placeholder="Nombre" class="input-name" name="name" required>
+                  <input id="email" type="email" placeholder="Correo" class="input-name" name="email" required>
+                </div>
+                <input type="text" id="subject" placeholder="Tema" class="input-subject" name="subject">
+                <textarea id="body" class="input-textarea" placeholder="Mensaje" name="comments"></textarea>
+                <input type="submit" id="submit" value="Subir">
+                <!-- API hidden params -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Formulario enviado correctamente. Pronto recibirás respuesta.">
+                <input type="hidden" name="_subject" value="Nuevo Formulario recibido!">
+                <input type="hidden" name="_replyto">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://duskstargithub.github.io/">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- GENERACIONAL DEL SCRIPT DE PAGINA -->
   <script src='assets/resources/lib/obsever.js'></script>
   <script src="assets/resources/js/script.js"></script>
   <script src="assets/resources/js/insert.js"></script>
+  <script src="assets/resources/js/modal.js"></script>
   <script src="assets/resources/ts/index.js"></script>
   <script src="assets/resources/js/validacion.js"></script>
 </body>
