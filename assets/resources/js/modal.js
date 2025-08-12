@@ -1,36 +1,57 @@
 document.addEventListener("DOMContentLoaded", function () {
   const proyectoRadio = document.getElementById("proyecto-radio");
+  const proyectoNTS = document.getElementById("proyecto-nts");
   const radioModal = document.getElementById("radio-modal");
-  const modalClose = document.querySelector(".modal-close");
-  const thumbnails = document.querySelectorAll(".thumb");
-  const mainImage = document.getElementById("main-image");
+  const ntsModal = document.getElementById("nts-modal");
+  const modalClose = document.querySelectorAll(".modal-close");
   let isModalOpen = false;
+  let currentOpenModal = null;
   let lastScrollPosition = 0;
+
   const closeModal = () => {
-    radioModal.classList.remove("active");
-    document.body.style.overflow = "";
-    isModalOpen = false;
+    if (currentOpenModal) {
+      currentOpenModal.classList.remove("active");
+      document.body.style.overflow = "";
+      isModalOpen = false;
+      currentOpenModal = null;
+    }
   };
-  proyectoRadio.addEventListener("click", function () {
-    radioModal.classList.add("active");
+
+  const openModal = (modal) => {
+    modal.classList.add("active");
     document.body.style.overflow = "hidden";
     isModalOpen = true;
+    currentOpenModal = modal;
     lastScrollPosition =
       window.pageYOffset || document.documentElement.scrollTop;
-  });
-  modalClose.addEventListener("click", closeModal);
-  radioModal.addEventListener("click", function (e) {
-    if (e.target === radioModal) {
-      closeModal();
+
+    const galleryMain = modal.querySelector(".gallery-main img");
+    const thumbnails = modal.querySelectorAll(".thumb");
+
+    if (galleryMain && thumbnails.length > 0) {
+      thumbnails.forEach((thumb) => {
+        thumb.addEventListener("click", function () {
+          thumbnails.forEach((t) => t.classList.remove("active"));
+          this.classList.add("active");
+          galleryMain.src = this.src;
+          galleryMain.alt = this.alt;
+        });
+      });
     }
+  };
+
+  proyectoRadio.addEventListener("click", () => openModal(radioModal));
+  proyectoNTS.addEventListener("click", () => openModal(ntsModal));
+
+  modalClose.forEach((closeBtn) => {
+    closeBtn.addEventListener("click", closeModal);
   });
 
-  thumbnails.forEach((thumb) => {
-    thumb.addEventListener("click", function () {
-      thumbnails.forEach((t) => t.classList.remove("active"));
-      this.classList.add("active");
-      mainImage.src = this.src;
-      mainImage.alt = this.alt;
+  [radioModal, ntsModal].forEach((modal) => {
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        closeModal();
+      }
     });
   });
 
@@ -39,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
       closeModal();
     }
   });
+
   window.addEventListener(
     "wheel",
     function (e) {
       if (isModalOpen) {
-        // Detectamos la dirección del scroll
         const delta = Math.sign(e.deltaY);
         if (delta !== 0) {
           closeModal();
@@ -52,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     { passive: true }
   );
+
   let touchStartY = 0;
   window.addEventListener(
     "touchstart",
@@ -62,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     { passive: true }
   );
+
   window.addEventListener(
     "touchmove",
     function (e) {
@@ -75,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     { passive: true }
   );
+
   window.addEventListener(
     "scroll",
     function () {
