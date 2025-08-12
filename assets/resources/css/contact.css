@@ -2,6 +2,7 @@
   width: 100%;
   text-align: center;
   height: auto;
+  transform: translate(0, 10%) !important;
 }
 
 .contact-header {
@@ -171,8 +172,6 @@ form {
   color: rgb(254, 241, 0);
 }
 
-
-
 @media screen and (max-width: 768px) {
   .contact-content {
     flex-direction: column;
@@ -188,11 +187,11 @@ form {
   .input-line {
     flex-direction: column;
   }
-  .input-subject{
+  .input-subject {
     width: -50% !important;
   }
 }
 
-.h4-s{
+.h4-s {
   top: 55% !important;
 }

@@ -10,6 +10,7 @@
   border: 0;
   color: #fff;
   font-family: "Poppins", sans-serif;
+  max-height: 100vh !important;
 }
 body {
   background-color: #000;
@@ -93,6 +94,7 @@ header {
   z-index: 2;
   overflow-x: hidden;
   overflow-y: scroll;
+  max-height: 100% !important;
 }
 
 .proyectos .page {
