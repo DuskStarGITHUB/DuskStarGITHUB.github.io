@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const proyectoRadio = document.getElementById("proyecto-radio");
   const proyectoNTS = document.getElementById("proyecto-nts");
+  const proyectoME = document.getElementById("proyecto-me");
+  const proyectoDJ = document.getElementById("proyecto-dj");
   const radioModal = document.getElementById("radio-modal");
   const ntsModal = document.getElementById("nts-modal");
+  const MeModal = document.getElementById("me-modal");
+  const djModal = document.getElementById("dj-modal");
   const modalClose = document.querySelectorAll(".modal-close");
   let isModalOpen = false;
   let currentOpenModal = null;
@@ -42,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   proyectoRadio.addEventListener("click", () => openModal(radioModal));
   proyectoNTS.addEventListener("click", () => openModal(ntsModal));
+  proyectoME.addEventListener("click", () => openModal(MeModal));
+  proyectoDJ.addEventListener("click", () => openModal(djModal));
 
   modalClose.forEach((closeBtn) => {
     closeBtn.addEventListener("click", closeModal);

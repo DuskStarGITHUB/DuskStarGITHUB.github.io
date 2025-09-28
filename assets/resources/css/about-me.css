@@ -3,17 +3,17 @@
 
 .h4-s {
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -49vh);
   font-family: "Istok Web", sans-serif;
   font-size: 40px;
   z-index: 1;
+  top: 55% !important;
 }
 
 .h4-s-2 {
   position: fixed;
-  top: 105vh;
+  top: 4vh;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Istok Web", sans-serif;
@@ -138,7 +138,6 @@
   position: relative;
   height: auto;
   width: auto;
-  top: 95vh;
   left: 0%;
 }
 
@@ -308,7 +307,6 @@
 
 .section-am2 {
   position: fixed;
-  bottom: -90vh;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
