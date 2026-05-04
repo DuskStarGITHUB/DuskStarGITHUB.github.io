@@ -48,6 +48,3 @@ Si deseas explorar mi sitio web en tu entorno local, sigue estos pasos:
 
 Estas funcionalidades permiten que el portafolio web ofrezca una experiencia de usuario enriquecedora y garantice la funcionalidad efectiva del sitio en diferentes dispositivos y situaciones.
 
-## 🌐 **Redes Sociales** 📱
-
-https://linktr.ee/DuskStar
